@@ -305,9 +305,9 @@ https://pjreddie.com/darknet/yolo/
 ```
 roslaunch sims testing.launch
 ```
-Wait for the Gazebo to load and open properly
-then,
 ## Terminal 2
+Wait for the Gazebo to load and open properly
+then in terminal 2,
 ```
 ./startsitl.sh
 ```
@@ -316,6 +316,7 @@ then,
 roslaunch sims apm.launch
 ```
 ## Terminal 4
+When this launch successfully, the drone's camera vision will pop up as a window, you can set aside where you want it.
 ```
 roslaunch darknet_ros darknet_ros.launch
 ```
@@ -344,3 +345,5 @@ then go to the 2nd terminal and hit "enter" key and the word "STABLIZE>" will po
 as shown in the picture
 
 ![terminal_2_run](docs/mode_guided.png)
+
+then go back to the gazebo and watch the drone launch
