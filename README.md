@@ -1,6 +1,6 @@
 # Mission-Planning-with-Obstacle-Avoidance-and-Human-Detection-Algorithms
 
-# PLEASE HAVE AN UBUNTU 20.04 or USE WSLG IN WINDOWS 11 AND DOWNLOAD UBUNTU 20.04 IN THE MICROSOFT STORE
+## PLEASE HAVE AN UBUNTU 20.04 or USE WSLG IN WINDOWS 11 AND DOWNLOAD UBUNTU 20.04 IN THE MICROSOFT STORE
 
 # Installing Ardupilot and MAVProxy Ubuntu 20.04
 
@@ -110,7 +110,7 @@ In another Terminal (Terminal 2), run SITL:
 cd ~/ardupilot/ArduCopter/
 sim_vehicle.py -v ArduCopter -f gazebo-iris --console
 ```
-ctrl + v to exit the program
+ctrl + c to exit the program
 
 
 # Install ROS and Setup Catkin  
@@ -203,7 +203,7 @@ sudo apt install ros-noetic-gazebo-ros ros-noetic-gazebo-plugins
 cp ~/catkin_ws/src/sims/scripts/startsitl.sh ~
 ```
 
-# Guidance Navigation and Control
+# Cloning Guidance Navigation and Control
 
 ## Make sure you have a text editor
 Please make sure you have a text editor. Our prefered text editor is sublime. You can download it by running the below commands
@@ -226,7 +226,7 @@ catkin build
 source ~/.bashrc
 ```
 
-# Intro to Gazebo World Modeling
+# Gazebo World Modeling
 
 ## Add the Open Gazebo Models Database
 
@@ -241,7 +241,7 @@ echo 'export GAZEBO_MODEL_PATH=~/gazebo_ws/gazebo_models:${GAZEBO_MODEL_PATH}' >
 source ~/.bashrc
 ```
 
-# Introduction to YOLO/Darknet Image Recognition 
+# Installing YOLO/Darknet Image Recognition 
 
 
 ## Install CUDA 
