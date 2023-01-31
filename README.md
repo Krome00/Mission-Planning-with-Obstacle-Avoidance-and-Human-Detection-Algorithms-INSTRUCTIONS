@@ -303,8 +303,10 @@ https://pjreddie.com/darknet/yolo/
 
 ## Terminal 1
 ```
-roslaunch sims testing.world
+roslaunch sims testing.launch
 ```
+Wait for the Gazebo to load and open properly
+then,
 ## Terminal 2
 ```
 ./startsitl.sh
@@ -318,11 +320,27 @@ roslaunch sims apm.launch
 roslaunch darknet_ros darknet_ros.launch
 ```
 ## Terminal 5
+This is the mission planning script with obstacle avoidance
 ```
 rosrun gnc avoidance
 ```
 ## Terminal 6
+The Last terminal is a script that tells the location of the person when the camera of the drone detects them.
 ```
 rosrun gnc sub
 ```
-The Last terminal is a script that tells the location of the person when the camera of the drone detects them.
+
+## If all is running smoothly then,
+
+### looking_at_console
+After running the 2nd terminal, two consoles will pop up
+please refer to the image, if this window outputs AP: EKF3 IMU0 using GPS and AP: EKF3 IMU1 using GPS
+
+![looking_at_console](docs/SITL.png)
+
+### terminal_2_run
+
+then go to the 2nd terminal and hit "enter" key and the word "STABLIZE>" will pop up, then type mode GUIDED
+as shown in the picture
+
+![terminal_2_run](docs/mode_guided.png)
