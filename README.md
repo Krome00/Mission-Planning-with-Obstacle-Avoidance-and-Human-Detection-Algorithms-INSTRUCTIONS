@@ -64,7 +64,6 @@ sudo apt update
 ```
 
 Install Gazebo:
-```
 ### Ubuntu [***20.04***]
 ```
 sudo apt-get install gazebo11 libgazebo11-dev
@@ -79,10 +78,7 @@ cd ~
 git clone https://github.com/khancyr/ardupilot_gazebo.git
 cd ardupilot_gazebo
 ```
-***Ubuntu 18.04 only*** checkout dev
-```
-git checkout dev
-```
+
 build and install plugin
 ```
 mkdir build
@@ -205,6 +201,7 @@ sudo apt install ros-noetic-gazebo-ros ros-noetic-gazebo-plugins
 ## copy and paste this to the terminal to use my script on using sitl
 ```
 cp ~/catkin_ws/src/sims/scripts/startsitl.sh ~
+```
 
 # Guidance Navigation and Control
 
@@ -227,6 +224,7 @@ git clone https://github.com/Krome00/gnc.git
 cd ~/catkin_ws
 catkin build
 source ~/.bashrc
+```
 
 # Intro to Gazebo World Modeling
 
